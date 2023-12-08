@@ -1,16 +1,39 @@
 #GoBoard {
-    display: grid;
-    grid-template-columns: repeat(18, 50px);
+    position: relative;
     height: 900px;
     width: 900px;
     background-color: aqua;
 }
 
+.GoBoard_main {
+    display: grid;
+    grid-template-columns: repeat(18, 50px);
+    grid-template-rows: repeat(18, 50px);
+    width: 100%;
+    height: 100%;
+}
+
+.GoBoard_Anchor_point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(19, 10px);*/
+    /*grid-template-rows: repeat(19, 10px);*/
+    width: 100%;
+    height: 100%;
+}
+
+.GoBoardAnchorPoint {
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: saddlebrown;
+}
+
 .GoBoardModule {
     display: inline-block;
-    /*position: absolute;*/
-    /*top: 50px;*/
-    /*right: 50px;*/
     height: 50px;
     width: 50px;
     background-color: aliceblue;
